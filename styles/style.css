@@ -344,9 +344,6 @@ h4 {
     grid-template-rows: span 2;
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
-  }
-
-  .third__section {
     grid-row: 1/1;
     grid-column: 1/1;
   }
@@ -425,9 +422,6 @@ h4 {
 
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-
-  .footer__title {
     padding: 319px 276px;
     line-height: 129.53px;
   }
