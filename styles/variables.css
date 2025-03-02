@@ -2,3 +2,38 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* Все цвета */
+  --color-dark-title: #db00ff;
+  --color-dark-text: #f1b2ce;
+  --color-dark-heading-text: #000028;
+  --color-dark-title-text: #ff0070;
+  --color-dark-background: #ff0070;
+  --color-dark-section-background: #000028;
+  --color-dark-decor: #ff0070;
+  --color-dark-border: #ff007066;
+  --decor-element-dark: visible;
+
+  --color-light-title: #ffc2e6;
+  --color-light-text: #353430;
+  --color-light-heading-text: #353430;
+  --color-light-title-text: #353430;
+  --color-light-background: #ff8dcb;
+  --color-light-section-background: #fff1f7;
+  --color-light-decor: #353430;
+  --color-light-border: #32312d66;
+  --decor-element-light: hidden;
+
+  --title-color: var(--color-dark-title);
+  --text-color: var(--color-dark-text);
+  --title-text-color: var(--color-dark-title-text);
+  --heading-text-color: var(--color-dark-heading-text);
+  --accent-color: var(--color-dark-background);
+  --decor-color: var(--color-dark-decor);
+  --border-color: var(--color-dark-border);
+  --decor-element-visible: var(--decor-element-dark);
+  --main-font: 'IBM Plex Mono';
+  --main-background-image: url('../images/cover-image.png');
+  --main-background-color: var(--color-dark-section-background);
+}

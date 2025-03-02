@@ -9,8 +9,19 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --title-color: var(--color-dark-title);
+  --text-color: var(--color-dark-text);
+  --title-text-color: var(--color-dark-title-text);
+  --heading-text-color: var(--color-dark-heading-text);
+  --accent-color: var(--color-dark-background);
+  --decor-color: var(--color-dark-decor);
+  --border-color: var(--color-dark-border);
+  --decor-element-visible: var(--decor-element-dark);
+
+  --main-background-image: url('../images/cover-image-dark.png');
+  --main-background-color: var(--color-dark-section-background);
 }
 
-.theme-dark .page {
+.theme-dark .page .decor__incription {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
