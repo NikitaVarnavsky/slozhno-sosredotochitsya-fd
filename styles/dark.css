@@ -21,7 +21,3 @@
   --main-background-image: url('../images/cover-image-dark.png');
   --main-background-color: var(--color-dark-section-background);
 }
-
-.theme-dark .page .decor__incription {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-}

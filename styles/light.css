@@ -22,10 +22,6 @@
   --main-background-color: var(--color-light-section-background);
 }
 
-/* .theme-light .page {
-  Вам также нужно будет написать ряд подобных селекторов
-} */
-
 @media (prefers-color-scheme: light) {
   :root {
     --title-color: var(--color-light-title);
