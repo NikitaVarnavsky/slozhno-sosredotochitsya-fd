@@ -102,14 +102,6 @@
   margin-bottom: 20px;
 }
 
-.gallery__title-article {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.4px;
-  letter-spacing: 0%;
-  margin-bottom: 10px;
-}
-
 .main__list-item:last-child {
   margin-bottom: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
 }
