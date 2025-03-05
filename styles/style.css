@@ -21,13 +21,12 @@
   padding: 75px 10px 66px;
   margin-bottom: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 98px 65px 192px 55px 117px;
+  min-height: 100vh;
 }
 
 .header__theme-menu {
-  grid-row: 1/1;
   justify-self: end;
+  margin-bottom: 68px;
 }
 
 .header__theme-menu-list {
@@ -47,13 +46,14 @@
 }
 
 .header__title {
-  grid-row: 3/3;
   font-weight: 700;
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--font-size-title);
   line-height: 95.7px;
   justify-self: start;
   color: var(--title-color);
   text-shadow: 4px 4px var(--accent-color);
+  align-self: start;
+  margin-bottom: 55px;
 }
 
 .header__content {
@@ -67,6 +67,10 @@
 
 .header__theme-menu-button:hover {
   outline: 1px solid var(--border-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -86,16 +90,24 @@
   margin-bottom: 40px;
 }
 
-.main__section {
+.section {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.main__title-section {
+.section__title {
   font-size: 18px;
   line-height: 23.4px;
   color: var(--title-text-color);
   margin-bottom: 20px;
+}
+
+.gallery__title-article {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
 }
 
 .main__list-item:last-child {
@@ -111,24 +123,16 @@
   letter-spacing: inherit;
 }
 
+.main__content:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .main__title-article {
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
   letter-spacing: 0%;
   margin-bottom: 10px;
-}
-
-.attention__section {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.attention__section-title {
-  font-size: 18px;
-  line-height: 23.4px;
-  color: var(--title-text-color);
-  margin-bottom: 20px;
 }
 
 .attention__list-item {
@@ -139,29 +143,12 @@
   margin-bottom: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
 }
 
-.concentration__section {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.concentration__section-title {
-  font-size: 18px;
-  line-height: 23.4px;
-  color: var(--title-text-color);
-  margin-bottom: 20px;
-}
-
 .concentration__title-over-article {
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
   letter-spacing: 0%;
   margin-bottom: 20px;
-}
-
-.gallery__section {
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 .gallery__title-article {
@@ -211,15 +198,19 @@ h4 {
 .sunset {
   grid-area: sunset;
 }
+
 .ice-cream {
   grid-area: ice-cream;
 }
+
 .tape {
   grid-area: tape;
 }
+
 .books {
   grid-area: books;
 }
+
 .street {
   grid-area: street;
 }
@@ -238,13 +229,14 @@ h4 {
   align-items: center;
   margin: 0 auto;
   inline-size: 100%;
+  min-height: 100vh;
 }
 
 .footer__title {
   padding: clamp(17.875rem, 7.3192rem + 45.0382vw, 28.9375rem)
     clamp(0.8125rem, -10.5782rem + 48.6005vw, 12.75rem);
   font-weight: 700;
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--font-size-title);
   line-height: 95.7px;
   color: var(--title-color);
   text-shadow: 4px 4px var(--accent-color);
@@ -306,7 +298,14 @@ h4 {
   .header {
     padding: 192px 20px 183px 0;
     margin-bottom: 60px;
-    grid-template-rows: 98px 173px 99px 162px 117px;
+  }
+
+  .header__title {
+    margin-bottom: 165px;
+  }
+
+  .header__theme-menu {
+    margin-bottom: 177px;
   }
 
   .container {
@@ -320,7 +319,7 @@ h4 {
     align-self: start;
   }
 
-  .main__title-section {
+  .section__title {
     grid-column: 1/1;
   }
 
@@ -368,6 +367,7 @@ h4 {
       'tape street street';
     gap: 20px;
   }
+
   .gallery__title-article {
     margin-bottom: 20px;
   }
@@ -378,17 +378,18 @@ h4 {
     padding: 20px 20px 134px 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 26px 290px 114px 113px 71px;
-  }
-
-  .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__theme-menu {
-    grid-row: 1/1;
     justify-self: center;
+    margin-bottom: 293px;
   }
+
+  .header__title {
+    align-self: end;
+    margin-bottom: 130px;
+  }
+
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
@@ -425,7 +426,6 @@ h4 {
   }
 
   .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     padding: 319px 276px;
     line-height: 129.53px;
   }
